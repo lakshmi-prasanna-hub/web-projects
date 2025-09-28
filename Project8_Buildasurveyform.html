@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Customer Feedback Survey</h1>
+    <p id="description">We value your opinion! Please fill out this survey to help us improve our services.</p>
+    <form id="survey-form" method="POST" action="#">
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" name="username" id="name" placeholder="enter your name" required/><br><br>
+      
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" name="useremail" id="email" placeholder="enter your email" required/><br><br>
+
+      <label id="number-label" for="number" >Age:</label>
+      <input type="number" name="age" id="number" min="18" max="99" placeholder="enter your age"/>
+    <br><br>
+    <label for="dropdown">How did you hear about us?</label>
+    <select id="dropdown">
+      <option value="">Select an option</option>
+      <option value="social-media">Social media</option>
+      <option value="friend">Friend</option>
+      <option value="advertisment">Advertisment</option>
+      </select>
+      <br><br>
+      <fieldset>
+        <legend>How satisfied are you with our service?</legend>
+        <input type="radio" id="satisfied" name="satisfied" value="satisfied">
+        <label for="satisfied">Satisfied</label>
+        <input type="radio" id="neutral" name="satisfied" value="neutral">
+        <label for="neutral">Neutral</label>
+        <input type="radio" id="unsatisfied" name="satisfied" value="unsatisfied">
+        <label for="unsatisfied">Unsatisfied</label> 
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>What services have you used? (Check all that apply)</legend>
+        <input type="checkbox" id="service1" name="services" value="consulting">
+        <label for="service1">Consulting</label>
+        <input type="checkbox" id="service2" name="services" value="support">
+        <label for="service2">Customer Support</label>
+        <input type="checkbox" id="service3" name="services" value="development">
+        <label for="service3">Software Development</label>
+      </fieldset>
+<br>
+<label for="comments">Additional Comments:</label>
+<textarea id="comments" name="comments" placeholder="share your thoughts" rows="5" col="50"></textarea><br><br>
+<button type="submit" id="submit">Submit</button>
+   </body>
+</html>
